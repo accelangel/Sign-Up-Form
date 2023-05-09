@@ -113,14 +113,14 @@ body {
 .input-field .placeholder {
     position: absolute;
     left: 0.4em;
-    top: calc(50%);
+    top: 50%;
     transform: translateY(-35%);
     color: #C55539;
     padding: 0 5px;
     transition: 0.3s ease;
     font-size: 1em;
     transition-delay: 0.07s;
-    width: 63%;
+    width: 17vw;
 }
 
 .input-field input:valid,
@@ -135,6 +135,7 @@ body {
     left: 8px;
     transform: translateY(-40%);
     background: #1C1F53;
+    width: fit-content;
 }
 
 .formContainer label {
@@ -156,7 +157,6 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 2em;
     border: none;
 }
 
@@ -167,6 +167,7 @@ body {
 .registrySection .submitContainer {
     position: relative;
     left: 2.75vw;
+    width: 78%;
 }
 
 .submitContainer button {
@@ -205,7 +206,6 @@ body {
     width: 65vw;
     color: rgb(255, 255, 255, 0.7);
     height: 2.5em;
-
 }
 
 .githubContainer p {
@@ -249,16 +249,24 @@ body {
 
     .registrySection .heroContainer h1 {
         position: static;
+        
     }
 
     .registrySection .formContainer {
-        width: 90%;
+        width: 100vw;
+        height: fit-content;
+        margin-top: -3em;
     }
 
     .formContainer fieldset {
-        width: 80%;
+        width: 80vw;
+        height: fit-content;
         flex-wrap: nowrap;
         align-items: center;
+    }
+
+    .formContainer form {
+        height: fit-content;
     }
 
     .formContainer label:nth-child(1) {
@@ -287,6 +295,8 @@ body {
 
     .formContainer label {
         width: 15em;
+        position: relative;
+        left: calc(4em - 10vw);
     }
 
     .formContainer input {
@@ -299,8 +309,8 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        top: 16em;
-
+        top: 12em;
+        left: 0.4vw;
     }
 
     .submitContainer button {
@@ -321,5 +331,9 @@ body {
 
     .imageContainer .logoContainer h1 {
         font-size: calc(3em + 5vw);
+    }
+    
+    .input-field .placeholder {
+        width: fit-content;
     }
 }
