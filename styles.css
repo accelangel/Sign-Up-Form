@@ -62,13 +62,14 @@ body {
     flex-direction: column;
 }
 
+
 .registrySection .heroContainer h1 {
     color: rgb(255, 255, 255, 0.9);
     height: 1.2em;
     min-width: 12ch;
     text-align: center;
     position: absolute;
-    left: -0.35em;
+    left: 0.1vw;
     font-size: calc(2em + 2vw);
     font-family: Classica;
 }
@@ -119,6 +120,7 @@ body {
     transition: 0.3s ease;
     font-size: 1em;
     transition-delay: 0.07s;
+    width: 63%;
 }
 
 .input-field input:valid,
@@ -137,7 +139,8 @@ body {
 
 .formContainer label {
     display: flex;
-    width: 33.33%;
+    width: 50%;
+    height: 33.33%;
 }
 
 .formContainer form {
@@ -163,6 +166,7 @@ body {
 
 .registrySection .submitContainer {
     position: relative;
+    left: 2.75vw;
 }
 
 .submitContainer button {
