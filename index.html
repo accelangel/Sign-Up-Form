@@ -19,7 +19,7 @@
     </div>
 
     <div class="registrySection">
-        
+
         <div class="heroContainer">
             <h1>Get started</h1>
         </div>
@@ -40,8 +40,9 @@
                     </label>
 
                     <label class="input-field">
-                        <input type="password" required>
+                        <input type="password" id="password" required>
                         <span class="placeholder">Password</span>
+                        <span class="validation toggle" id="passwordValidation">* minimum 8 charecters</span>
                     </label>
 
                     <label class="input-field">
@@ -55,8 +56,9 @@
                     </label>
 
                     <label class="input-field">
-                        <input type="password" required>
+                        <input type="password" id="confirmPassword" required>
                         <span class="placeholder">Confirm Password</span>
+                        <span class="passwordMatch toggle" id="passwordMatch">* password mismatch</span>
                     </label>
 
                 </fieldset>
@@ -64,10 +66,10 @@
         </div>
 
         <div class="submitContainer">
-            <button>Create Account</button>
+            <button id="submitButton">Create Account</button>
             <p>Already have an account? <span>LOG IN</span></p>
         </div>
-        
+
         <div class="githubContainer">
             <p>Built by:</p>
             <a href="https://github.com/accelangel">Erfan</a>

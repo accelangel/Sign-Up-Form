@@ -127,6 +127,18 @@ body {
     transition-delay: 0.07s;
 }
 
+.input-field span.validation,
+.input-field span.passwordMatch {
+    color: red;
+    position: absolute;
+    top: 4.8em;
+    left: 0.5em;
+}
+
+.toggle {
+    display: none;
+}
+
 .input-field input:valid,
 .input-field input:focus {
     border-color: #13646B;
@@ -172,6 +184,7 @@ body {
     position: relative;
     left: 2.75vw;
     width: 78%;
+    top: 5em;
 }
 
 .submitContainer button {
@@ -253,7 +266,7 @@ body {
 
     .registrySection .heroContainer h1 {
         position: static;
-        
+
     }
 
     .registrySection .formContainer {
@@ -336,8 +349,13 @@ body {
     .imageContainer .logoContainer h1 {
         font-size: calc(3em + 5vw);
     }
-    
+
     .input-field .placeholder {
         width: fit-content;
+    }
+
+    .input-field span.validation,
+    .input-field span.passwordMatch {
+        top: 4.15em;
     }
 }
